@@ -1,33 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jimena Flores Carmona Case Study 1</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-</head>
-<body>
-    <header>
-        <div><img src="/CasoEstudio01_JimenaFloresCarmona/images/Universidad Fidélitas.png" alt="Fidelitas University"></div>
-        <hr>
-        <h1>Notes Application</h1>
-        <hr>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-            </ul>
-        </nav>
-    </header>
-    <hr>
-    <section class="welcome">
-        <h2>Welcome to Notes Application</h2>
-        <p>This is a “Notes App” for the assessment of Case Study 1. Click the "Create notes" button to create your first notepad.</p>
 
-        <button id="create" type="create">Create Notes</button>
-    </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jimena Flores Carmona Case Study 1</title>
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="/CasoEstudio01_JimenaFloresCarmona/config/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div><img src="/CasoEstudio01_JimenaFloresCarmona/images/Universidad Fidélitas.png" alt="Fidelitas University">
+    </div>
     <hr>
-    <footer><p>2024 Case Study 1 - Thursday July 11th</p></footer>
+    <h1>Notes Application</h1>
+    <hr>
+    <nav>
+      <ul>
+        <li><a href="main.html">Inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+  <hr>
+  <div class="popup-box">
+    <div class="popup">
+      <div class="content">
+        <header>
+          <p></p>
+          <i class="uil uil-times"></i>
+        </header>
+        <form action="#">
+          <div class="row title">
+            <label>Title</label>
+            <input type="text" spellcheck="false">
+          </div>
+          <div class="row description">
+            <label>Description</label>
+            <textarea spellcheck="false"></textarea>
+          </div>
+          <button></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <li class="add-box">
+      <div class="icon"><i class="uil uil-plus"></i></div>
+      <p>Add new note</p>
+    </li>
+  </div>
+  <hr>
+  <footer>
+    <p>2024 Case Study 1 - Thursday July 11th</p>
+  </footer>
 </body>
+
 </html>
