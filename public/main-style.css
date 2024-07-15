@@ -1,0 +1,135 @@
+/* -- General Styles -- */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #4488ad;
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  align-self: center;
+  margin: 10px; 
+  padding: 10px;
+  width: 100px;
+}
+
+/* Main Style */
+main {
+  text-align: justify;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  color: aliceblue;
+  /*
+  margin-bottom: 20px;
+  */
+  position: absolute;
+  top: 112px;
+  left: 64px;
+}
+
+/* Navigation Style */
+nav {
+  text-align: right;
+  color: darkblue;
+  margin: 0px;
+  clear: both;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+}
+
+nav li {
+  padding: 5px;
+  display: inline-block;
+}
+
+a {
+  color: darkblue;
+  text-decoration: none;
+  text-align: center;
+  margin: 0px;
+}
+
+nav a:hover {
+  color: #97caf7;
+}
+
+/* Section Styles */
+
+.welcome {
+  text-align: justify;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+#start {
+  align-items: center;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), 1fr);
+  gap: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/*
+#start {
+  position: fixed;
+  top: 12rem;
+  left: 4rem;
+  outline: none;
+  border: none;
+  background: #8e44ad;
+  color: #fff;
+  padding: 0.6rem 2rem;
+  margin-bottom: 8rem 0;
+  font-family: inherit;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}*/
+
+footer {
+  background-color: aliceblue;
+  color: steelblue;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+
+  width: 100%;
+  position: fixed;
+  /*
+  padding: 10px;
+  position: absolute;
+  */
+  bottom: 0;
+  left: 0;
+
+  .copyright {
+    font-size: 0.8em;
+    margin: 0;
+  }
+}
