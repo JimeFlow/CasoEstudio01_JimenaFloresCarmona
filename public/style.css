@@ -29,7 +29,7 @@ h2 {
   font-size: 38px;
   color: aliceblue;
   position: absolute;
-  top: 120px;
+  top: 130px;
   left: 64px;
 }
 
@@ -58,7 +58,7 @@ h2 {
 */
 
 /* Button Navigation Style */
-#main {
+.main {
   float: left;
   align-items: center;
   margin-bottom: 20px;
@@ -67,6 +67,14 @@ h2 {
   gap: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  outline: none;
+  border: none;
+  background: #446ead;
+  color: #fff;
+  padding: 0.6rem 2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 nav {
@@ -124,7 +132,7 @@ footer {
   }
 }
 
-/* -- Notes Styles -- */
+/* -- Notes Style -- */
 /*
 #notesList {
   list-style: none;
@@ -151,7 +159,7 @@ footer {
   color: #333;
 }*/
 
-.btn-add {
+.add-note {
   position: fixed;
   top: 12rem;
   left: 4rem;
@@ -176,14 +184,14 @@ footer {
   margin: 30px 0 0 3.8rem;
 }
 
-.note-wrapper .operations {
+.note-wrapper .functions {
   background: #2c3f6f;
   display: flex;
   justify-content: flex-end;
   padding: 1rem;
 }
 
-.note-wrapper .operations button {
+.note-wrapper .functions button {
   background: transparent;
   border: none;
   color: #fff;

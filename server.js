@@ -10,7 +10,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(PUBLIC));
 app.use(express.json());
 
-let notes = []; // To store in the app's system memory
+//let notes = []; // To store in the app's system memory
+let notes = JSON.parse(localStorage.getItem('notes')) || [];
 
 app.get('/main', (req, res) => {
     console.log('Loading home...\n');

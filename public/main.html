@@ -16,24 +16,48 @@
 
     <main>
         <h1>Notes Application</h1>
-        <nav>
-            <ul>
-                <li> | <a href="main.html">Inicio</a> | </li>
-            </ul>
-        </nav>
-
+        
         <section class="welcome">
             <h2>Welcome to Notes Application</h2>
-            <p>This is a “Notes App” for the assessment of Case Study 1. Click the "Create notes" button to create your
+            <p>This is a “Notes App” for the assessment of Case Study 1. Click the "Start Notepad" button to create your
                 first notepad.</p>
             <br>
-            <button id="start" type="start"><a href="index.html">Start Notepad</a></button>
+            <nav>
+                <ul>
+                    <button class="start" type="start">
+                        <li><a href="index.html">Start Notepad</a></li>
+                    </button>
+                </ul>
+            </nav>
+            <!--<button id="btnNewNote">New Note</button>-->
         </section>
+
+        <!-- OLD (NOT USED AT ALL ANYMORE)    
+        <div id="notesList"></div>
+        
+        -- FORM --
+        <form id="noteForm" class="hidden">
+        <h2>Edit Note</h2>
+        
+        <input type="hidden" id="noteId" name="id">
+        
+        <label for="noteTitle">Title:</label>
+        <input type="text" id="noteTitle" name="title" maxlength="200" required>
+        
+        <label for="noteContent">Content:</label>
+        <textarea id="noteContent" name="content" required></textarea>
+        
+        <label for="noteTags">Tags:</label>
+        <input type="text" id="noteTags" name="tags" maxlength="100">
+        
+        <button type="submit">Save</button>
+        <button type="button" onclick="cancelEdit()">Cancel</button>
+        </form> -->
     </main>
 
     <footer>
         <p style="text-align: center">&COPY; 2024 Case Study 1 - Thursday July 11th</p>
-    <hr>
+    </footer>
 </body>
 
 </html>
